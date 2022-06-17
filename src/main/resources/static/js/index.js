@@ -3,7 +3,7 @@ window.onload = () => {
     const addPanel = document.getElementById(`AddPanel`);
     addPanel.hidden = true;
     const bookNameText = document.getElementById(`BookNameText`);
-    const expositionText = document.getElementById(`E xpositionText`);
+    const expositionText = document.getElementById(`ExpositionText`);
     const pagesCounter = document.getElementById(`PagesCounter`);
     const addPanelSubmitButton = document.getElementById(`AddPanelSubmitButton`);
 

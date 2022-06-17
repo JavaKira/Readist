@@ -48,7 +48,7 @@
             <div th:each="readSession : ${readSessions}">
                 <div class="row g-3">
                     <div class="card p-3">
-                        <h2 th:text="${readSession.getBookName()} + ${readSession.getDate()}">Название книги Дата</h2>
+                        <h2 th:text="${readSession.getBookName()} + ' ' + ${readSession.getPagesCount()} + ' Страниц ' + ${readSession.getDate()}">Название книги Дата</h2>
                         <p th:text="${readSession.getExposition()}">Сжатое изложение прочитанного</p>
                     </div>
                 </div>

@@ -8,5 +8,6 @@ import java.util.Date;
 public class ReadSessionDto {
     private Date date;
     private String bookName; //todo create Book entity
+    private String exposition;
     private int pagesCount;
 }

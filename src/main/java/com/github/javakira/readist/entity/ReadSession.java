@@ -22,11 +22,13 @@ public class ReadSession {
 
     private Date date;
     private String bookName; //todo create Book entity
+    private String exposition;
     private int pagesCount;
 
     public ReadSession(ReadSessionDto readSessionDto) {
         date = readSessionDto.getDate();
         bookName = readSessionDto.getBookName();
         pagesCount = readSessionDto.getPagesCount();
+        exposition = readSessionDto.getExposition();
     }
 }

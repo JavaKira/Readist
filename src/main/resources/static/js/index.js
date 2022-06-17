@@ -3,7 +3,7 @@ window.onload = () => {
     const addPanel = document.getElementById(`AddPanel`);
     addPanel.hidden = true;
     const bookNameText = document.getElementById(`BookNameText`);
-    const expositionText = document.getElementById(`ExpositionText`);
+    const expositionText = document.getElementById(`E xpositionText`);
     const pagesCounter = document.getElementById(`PagesCounter`);
     const addPanelSubmitButton = document.getElementById(`AddPanelSubmitButton`);
 
@@ -19,7 +19,7 @@ window.onload = () => {
             date: new Date,
             bookName: bookNameText.value,
             pagesCount: parseInt(pagesCounter.value),
-            expositionText: expositionText.value,
+            exposition: expositionText.value,
         }))
     }
 }

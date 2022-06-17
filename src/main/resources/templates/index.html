@@ -45,25 +45,14 @@
                 <button class="btn p-3 bg-dark text-white" id="AddButton">Добавить сеанс +</button>
             </div>
             <br>
-            <div class="row g-3">
-                <div class="card p-3">
-                    <h2>Название книги Дата</h2>
-                    <p>Сжатое изложение прочитанного</p>
+            <div th:each="readSession : ${readSessions}">
+                <div class="row g-3">
+                    <div class="card p-3">
+                        <h2 th:text="${readSession.getBookName()} + ${readSession.getDate()}">Название книги Дата</h2>
+                        <p>Сжатое изложение прочитанного</p>
+                    </div>
                 </div>
-            </div>
-            <br>
-            <div class="row g-3">
-                <div class="card p-3">
-                    <h2>От нуля к еденице 12.06.2022 22:10</h2>
-                    <p>Ну там автор что то говорит, я хз.</p>
-                </div>
-            </div>
-            <br>
-            <div class="row g-3">
-                <div class="card p-3">
-                    <h2> Бизнес по тинькову 11.06.2022 4:15</h2>
-                    <p>Тинькофф в 2022 году вырос на 999% и бла бла бла...</p>
-                </div>
+                <br>
             </div>
         </div>
     </div>
